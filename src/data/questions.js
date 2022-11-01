@@ -1,34 +1,28 @@
 const data = [
   {
-    question: "O que é Vanilla JavaScript?",
-    options: [
-      "JavaScript puro",
-      "Uma biblioteca JavaScript",
-      "Um framework JavaScript",
-      "Um compilador de JavaScript",
-    ],
-    answer: "JavaScript puro",
+    question: "Qual seleção foi campeã da copa do mundo de 2018?",
+    options: ["Brasil", "Alemanha", "França", "Canada"],
+    answer: "França",
   },
   {
-    question: "Com qual instrução declaramos uma constante em JavaScript?",
-    options: ["const", "let", "var", "define"],
-    answer: "const",
+    question: "Em qual ano a seleção brasileira conquistou o penta?",
+    options: ["2006", "2002", "1998", "2013"],
+    answer: "2002",
   },
   {
-    question: "Qual dos tipos de dado a seguir não existe em JavaScript?",
-    options: ["string", "number", "boolean", "float"],
-    answer: "float",
+    question: "Quantos titulos tem a seleção da Alemanha",
+    options: ["2", "4", "9", "0"],
+    answer: "4",
   },
   {
-    question: "Qual dos métodos a seguir seleciona um elemento?",
-    options: ["querySelector", "parseInt", "sort", "reduce"],
-    answer: "querySelector",
+    question: "Qual seleção foi campeã da copa de 1950?",
+    options: ["Brasil", "França", "Alemanha", "Uruguai"],
+    answer: "Uruguai",
   },
   {
-    question:
-      "Qual destas propriedades da a quantidade de elementos de um array?",
-    options: ["qty", "length", "items", "index"],
-    answer: "length",
+    question: "Qual foi o mascote da copa do mundo de 2014?",
+    options: ["leão", "Arara-azul", "tatu-bola", "Zebra"],
+    answer: "tatu-bola",
   },
 ];
 
