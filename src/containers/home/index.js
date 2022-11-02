@@ -17,12 +17,31 @@ const Home = () => {
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
+  function handleOptionCorrect(isCorrect) {
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+
+    const nextQuestion = currentQuestion + 1;
+
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    } else {
+      setShowScore(true);
+    }
+  }
+
   return (
     <Container>
       <ContainerInfo>
         {showScore ? (
           <ScoreSection>
-            Voce pontuou {score} de {questions.length}
+            <p>
+              Voce pontuou {score} de {questions.length}
+            </p>
+            <button onClick={() => window.location.reload(false)}>
+              Refazer o teste
+            </button>
           </ScoreSection>
         ) : (
           <>
@@ -35,7 +54,12 @@ const Home = () => {
 
             <AnswerSection>
               {questions[currentQuestion].options.map((option, index) => (
-                <button key={index}>{option}</button>
+                <button
+                  onClick={() => handleOptionCorrect(option.isCorrect)}
+                  key={index}
+                >
+                  {option.answer}
+                </button>
               ))}
             </AnswerSection>
           </>

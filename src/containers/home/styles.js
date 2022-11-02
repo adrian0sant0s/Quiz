@@ -20,7 +20,34 @@ export const ContainerInfo = styled.div`
   padding: 30px;
 `;
 
-export const ScoreSection = styled.div``;
+export const ScoreSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+
+  p {
+    /* align-self: stretch;
+    text-align: center; */
+    color: #131414;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    padding: 10px 50px;
+  }
+
+  button {
+    /* align-self: flex-end; */
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: #ff4500;
+    color: #fff;
+    cursor: pointer;
+  }
+`;
 
 export const QuestionSection = styled.div``;
 
