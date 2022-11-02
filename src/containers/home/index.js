@@ -30,10 +30,14 @@ const Home = () => {
               <QuestionCount>
                 <span>Questão {currentQuestion + 1}</span>/{questions.length}
               </QuestionCount>
-              <QuestionText></QuestionText>
+              <QuestionText>{questions[currentQuestion].question}</QuestionText>
             </QuestionSection>
 
-            <AnswerSection></AnswerSection>
+            <AnswerSection>
+              {questions[currentQuestion].options.map((option, index) => (
+                <button key={index}>{option}</button>
+              ))}
+            </AnswerSection>
           </>
         )}
       </ContainerInfo>
