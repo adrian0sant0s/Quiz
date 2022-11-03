@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import {
   Container,
@@ -15,7 +16,7 @@ const Welcome = () => {
         <ContainerMessage>
           <h1>Quiz da copa do mundo</h1>
           <h2>Seja muito bem vindo!</h2>
-          <button>Começar</button>
+          <Link to="/init">Começar</Link>;
         </ContainerMessage>
         <ImageTaça src={imageTaça} />
       </ContainerInfo>
