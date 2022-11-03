@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import Background from "../../assets/gramado.jpg";
 
@@ -36,16 +37,17 @@ export const ContainerMessage = styled.div`
   h2 {
     color: #eee;
   }
+`;
 
-  button {
-    background: none;
-    color: #eee;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 120px;
-    padding: 10px;
-  }
+export const Button = styled(Link)`
+  background-color: #eee;
+  color: #01260a;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 120px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
 
   button:active {
     opacity: 0.5;
