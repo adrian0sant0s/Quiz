@@ -20,7 +20,6 @@ export const ContainerInfo = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* filter: opacity(0.75); */
 `;
 
 export const ContainerMessage = styled.div`
