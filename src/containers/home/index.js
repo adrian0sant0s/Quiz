@@ -6,6 +6,7 @@ import {
   Container,
   ContainerInfo,
   ScoreSection,
+  Button,
   QuestionSection,
   QuestionCount,
   QuestionText,
@@ -39,9 +40,7 @@ const Home = () => {
             <p>
               Voce pontuou {score} de {questions.length}
             </p>
-            <button onClick={() => window.location.reload(false)}>
-              Refazer o teste
-            </button>
+            <Button to="/">Refazer teste</Button>
           </ScoreSection>
         ) : (
           <>

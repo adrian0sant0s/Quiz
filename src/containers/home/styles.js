@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import estadio from "../../assets/copa.jpg";
 
@@ -36,17 +37,17 @@ export const ScoreSection = styled.div`
     font-size: 1.5rem;
     padding: 10px 50px;
   }
+`;
 
-  button {
-    /* align-self: flex-end; */
-    font-size: 1rem;
-    padding: 10px;
-    border-radius: 50px;
-    border: none;
-    background-color: #ff4500;
-    color: #fff;
-    cursor: pointer;
-  }
+export const Button = styled(Link)`
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ff4500;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
 `;
 
 export const QuestionSection = styled.div``;
