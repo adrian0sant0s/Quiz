@@ -11,4 +11,4 @@
 
   <img src="./src/assets/quiz.png" alt="printscreen da aplicação">
 
-Link da aplicação:
+Link da aplicação: https://quiz-copadomundo-adrianosantos.netlify.app/
