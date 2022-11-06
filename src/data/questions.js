@@ -44,6 +44,16 @@ const data = [
       { answer: "Zebra", isCorrect: false },
     ],
   },
+
+  {
+    question: "Quem foi o artilheiro da copa de 2018?",
+    options: [
+      { answer: "Neymar", isCorrect: false },
+      { answer: "Mbappe", isCorrect: false },
+      { answer: "Harry Kane", isCorrect: true },
+      { answer: "Cristiano Ronaldo", isCorrect: false },
+    ],
+  },
 ];
 
 export default data;
