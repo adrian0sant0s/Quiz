@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import Background from "../../assets/gramado.jpg";
+import Background from "../../assets/capa.jpg";
 
 export const Container = styled.div`
   background: url("${Background}");
