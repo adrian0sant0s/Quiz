@@ -29,8 +29,6 @@ export const ScoreSection = styled.div`
   height: 100%;
 
   p {
-    /* align-self: stretch;
-    text-align: center; */
     color: #131414;
     background-color: #fff;
     border-radius: 30px;
@@ -89,5 +87,20 @@ export const AnswerSection = styled.div`
 
   button:active {
     opacity: 0.8;
+  }
+`;
+
+export const ScoreAlert = styled.div`
+  font-size: 1.6rem;
+  color: #b8860b;
+  animation: flipTitle 2s;
+
+  @keyframes flipTitle {
+    from {
+      transform: rotateX(90deg);
+    }
+    to {
+      transform: rotateX(0deg);
+    }
   }
 `;

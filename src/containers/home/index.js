@@ -11,6 +11,7 @@ import {
   QuestionCount,
   QuestionText,
   AnswerSection,
+  ScoreAlert,
 } from "./styles";
 
 const Home = () => {
@@ -40,6 +41,9 @@ const Home = () => {
             <p>
               Voce pontuou {score} de {questions.length}
             </p>
+            <ScoreAlert>
+              {score <= 3 ? "Voce pode melhorar, tente novamente" : "Parabéns"}
+            </ScoreAlert>
             <Button to="/">Refazer teste</Button>
           </ScoreSection>
         ) : (
